@@ -1,0 +1,5 @@
+@charset "UTF-8";
+
+#sub_section .product > li:nth-child(1) strong {margin-bottom: 29px;}
+#sub_section .product > li:nth-child(1) p {margin-bottom: 41px;}
+

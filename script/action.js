@@ -13,4 +13,11 @@ $(document).ready(function(){
             $('#header').css('background-color', '');
         }
     );
+
+    
+})
+
+// sub menu
+$('#sub_section .menu li').click(function() {
+    $(this).addClass('on').siblings().removeClass('on')
 })
