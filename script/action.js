@@ -9,6 +9,14 @@ $('#header').load('include/header.html', function(){
             $('#header').css('background-color', '');
         }
     );
+
+
+    $('.gnb li a').each(function(){
+        let gnbHref = $(this).attr('href')
+        if(gnbHref != '#'){
+            $(this).addClass('on')
+        }
+    })
 })
 
 $('footer').load('include/footer.html', function(){
@@ -41,7 +49,7 @@ gsap.registerPlugin(ScrollTrigger);
                 scrub:1,
                 start:'center center',
                 end:'200%',
-                markers:true
+                // markers:true
             }
         });
 
